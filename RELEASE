@@ -1,0 +1,8 @@
+RELEASE_PACKAGE=gitea
+RELEASE_VERSION=1.22.3
+if [ `uname -m` == "aarch64" ]; then
+    ARCH=arm64
+else
+    ARCH=amd64
+fi
+DOWNLOAD_URL=https://dl.gitea.com/${RELEASE_PACKAGE}/${RELEASE_VERSION}/${RELEASE_PACKAGE}-${RELEASE_VERSION}-linux-${ARCH}
