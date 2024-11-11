@@ -14,10 +14,10 @@ RUN chmod +x setup RELEASE && /setup
 RUN chmod +x gitea
 
 # 创建用户并指定 home 目录
-RUN useradd -m -d /home/gitea -s /bin/bash gitea && \
-    chown -R gitea:gitea /home/gitea
+# RUN useradd -m -d /home/gitea -s /bin/bash gitea && \
+#     chown -R gitea:gitea /home/gitea
 
-USER gitea
+# USER gitea
 
 
 CMD ["/gitea"]
